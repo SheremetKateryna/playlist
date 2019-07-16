@@ -1,0 +1,120 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 435px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    display: flex;
+}
+
+.header {
+    height: 60px;
+    background: #f86f05;
+    border-radius: 5px 5px 0 0;
+}
+
+.header::after{
+    content: "";
+    background: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 12px 0;
+    display: block;
+    height:35px;
+}
+
+.track {
+    text-align: center;
+    background: #272e2a;
+    padding: 35px 40px 20px;
+    color: #fff;
+
+}
+.track_img {
+    border-radius: 5px;
+}
+
+.track_title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.track_singer {
+    margin: 10px 0 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    max-height: 350px;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #7f7f7f;
+}
+
+.list_item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 15px 40px;
+    color: #353535;
+}
+
+.list_item:nth-child(2n){
+    background: #ddd8d3;
+
+}
+
+.control {
+    display: flex;
+    background: #1b1f1c;
+    padding: 35px 15px 15px;
+    border-radius: 0 0 5px 5px;
+}
+.button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.button__spec {
+    color: #3e4a43;
+
+}
+.time{
+    display: flex;
+    align-items: center;
+    width: 265px;
+    height: 20px;
+    background: #262c28;
+    border-radius: 5px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.time_fill {
+    height: 20px;
+    background: #d07d3c;
+}
